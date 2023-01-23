@@ -5,11 +5,38 @@ import { socialIcons } from '../../../Data';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
+
+
+
+  let href=''
+
+  function redirect(index){
+ 
+ switch (index) {
+     case 0:
+       href=  'https://github.com/uenissantos'
+         break;
+         case 1:
+             href=  "https://www.linkedin.com/in/uenis-santos-desenvolvedor-front-end/"
+               break;
+               case 2:
+                 href=  'https://wa.me/5521994305914'
+                   break;
+     default:
+         break;
+ }
+ 
+ 
+ 
+ 
+ }
+
+
   return (
 
 
     
-    <div className="container" id="contact">
+    <div className="container" id="contato">
 
 
 
@@ -52,9 +79,12 @@ para este ano e os próximos 10 anos.i</p>
           })}
           <div className="social_icons">
             {socialIcons.map((socialIcon, index) => {
+redirect(index)
+
+
             return (
               <div key={index} >
-                {socialIcon}
+               <a  target='_blank'  href={href} rel="noreferrer">{socialIcon}</a>    
               </div>
             )
           })}

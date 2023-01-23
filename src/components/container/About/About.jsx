@@ -63,7 +63,6 @@ switch (bio.key) {
 }
 
 
-            console.log(bio.key);
             return (
               <div className="bio" key={bio.id}>
                 <span className='bioKey'>{bio.icon}{bio.key}</span>
