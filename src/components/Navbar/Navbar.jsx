@@ -55,15 +55,16 @@ const Navbar = () => {
                       className="nav_links"
                    >
                   {navLinks.map((navlink,index) => {
-                    console.log(navlink[0]);
                       return <li key={index}><a href={`#${navlink}`}>{navlink}</a></li>
                   })}
               </ul>
               <div className="social_icons" >
-                  {socialIcons.map((socialIcon, index) => {
+                  {socialIcons.map((socialIcon, index) => {             
+                  const href= index===0 ?'https://github.com/uenissantos':"https://www.linkedin.com/in/uenis-santos-desenvolvedor-front-end/"
+
                   return (
                       <div key={index}>
-                          {socialIcon}
+                        <a  target={'_blank'} href={href} rel="noreferrer">{socialIcon}</a>  
                       </div>
                   )
               })}
