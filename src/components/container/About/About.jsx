@@ -54,15 +54,13 @@ Maiores informações ,me chame pra conversar</p>
               </div>
             )
           })}
-          <motion.a href={curriculo} download
+          <motion.a onMouseOver={  ()=>  setpdfView(true)}  onMouseOut={  ()=>  setpdfView(false) } href={curriculo} download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >             
            Baixar Curriculo
           </motion.a>
- <div onMouseOver={  ()=>  setpdfView(true)} onMouseOut={  ()=>  setpdfView(false) } className='on_mouse_over'>
 
-</div> 
 
         </motion.div>
  { pdfView&& <motion.div  className='curriculo   '  onMouseOver={  ()=>  setpdfView(true)} onMouseOut={  ()=>  setpdfView(false)  }   >
