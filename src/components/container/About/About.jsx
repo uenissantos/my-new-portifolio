@@ -47,10 +47,27 @@ const About = () => {
 
 Maiores informações ,me chame pra conversar</p>
           {bios.map(bio => {
+var href='';
+switch (bio.key) {
+  case 'Phone':
+    href=  `tel:+55`
+    break;
+    case   'Email':
+     href=  'mailto:'
+      break;
+      case  'Name':
+        href= `#`
+        break;
+  default:
+    break;
+}
+
+
+            console.log(bio.key);
             return (
               <div className="bio" key={bio.id}>
                 <span className='bioKey'>{bio.icon}{bio.key}</span>
-                <span className='bioValue'> <a href="/">{bio.value}</a> </span>
+                <span className='bioValue'> <a href={href+bio.value}>{bio.value}</a> </span>
               </div>
             )
           })}
