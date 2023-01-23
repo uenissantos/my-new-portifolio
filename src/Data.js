@@ -1,6 +1,9 @@
-import { FaHtml5, FaCss3, FaNodeJs, FaReact, FaSass, FaFigma, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane, FaGithubAlt, FaLinkedin } from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
+import {  FaCss3, FaNodeJs, FaReact, FaSass, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane, FaGithubAlt, FaLinkedin } from "react-icons/fa";
+import {TiHtml5} from 'react-icons/ti'
+import {} from 'react-icons/si'
+
+import { TbBrandJavascript,TbBrandAngular } from "react-icons/tb";
+import { SiTypescript ,SiStyledcomponents,SiTailwindcss,SiJest,SiWebpack,SiEslint,SiFigma,SiFlutter} from "react-icons/si";
 import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
@@ -8,7 +11,7 @@ import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
 
-export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
+export const navLinks = ["home", "sobre", " habilidades", "portfolio", "contato"]
 
 export const socialIcons = [
   <FaGithubAlt />,
@@ -36,7 +39,9 @@ export const bios = [
   }
 ]
 
-export const icons = [<FaHtml5 />, <FaCss3 />, <DiJavascript />, <SiTypescript />, <FaReact />, <FaNodeJs />, <FaSass />, <FaFigma />]
+export const icons = [<TiHtml5 />, <FaCss3 />,  <TbBrandJavascript />, 
+<SiTypescript />,<SiJest/>,<SiFlutter/>, <SiStyledcomponents/>, <SiTailwindcss/>, <FaReact />,
+ <FaNodeJs />, <FaSass />, <TbBrandAngular />  ,<SiWebpack/>,<SiEslint/>, <SiFigma/>]
 
 export const experiences = [
   {

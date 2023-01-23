@@ -6,12 +6,12 @@ import {FiGithub, FiEye} from "react-icons/fi"
 import { motion } from 'framer-motion';
 
 const Portfolio = () => {
-  const [tab, setTab] = useState({ name: "all" });
+  const [tab, setTab] = useState({ name: "todos" });
   const [works,setWorks] = useState([])
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if (tab.name === "all") {
+    if (tab.name === "todos") {
       setWorks(workImages)
     } else {
       const newWork = workImages.filter(workImage => {
@@ -20,6 +20,7 @@ const Portfolio = () => {
       })
       setWorks(newWork)
     }
+
   }, [tab])
   
   const activeTab = (e,index) => {

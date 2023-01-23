@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   const [active, setActive] = useState(1)
   return (
-    <div className="container" id="skills">
+    <div className="container" id=" habilidades">
       <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}  
@@ -23,11 +23,11 @@ const Skills = () => {
       >
         <button
           onClick={() => setActive(1)}
-          className={active === 1 ? "active" : ""}>Skills</button>
+          className={active === 1 ? "active" : ""}> habilidades</button>
         <button
           onClick={() => setActive(2)}
           className={active === 2 ? "active" : ""}
-        >Experiences</button>
+        >experiências</button>
       </motion.div>
       <motion.div
         initial={{opacity: 0}}

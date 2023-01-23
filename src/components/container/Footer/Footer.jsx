@@ -14,7 +14,7 @@ const Footer = () => {
       className='footer'
     >
       <div className="copyright">
-        <p>Copyright&copy;2023 Todos os direitos reservados. Feito por Uenis santos
+        <p>Copyright&copy;2023 Todos os direitos reservados. Feito por 
 <span>Uenis santos</span></p>
       </div>
    

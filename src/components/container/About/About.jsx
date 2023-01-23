@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./About.scss";
 
 import { motion } from 'framer-motion';
@@ -7,10 +7,14 @@ import portfolio from "../../../assets/portfolio.png"
 import curriculo from "../../../assets/curriculo.pdf"
 
 const About = () => {
+  const [pdfView, setpdfView] = useState(false);
+
+
+
 
 
   return (
-    <div className="container " id='about'>
+    <div className="container " id='sobre'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
@@ -53,12 +57,20 @@ Maiores informações ,me chame pra conversar</p>
           <motion.a href={curriculo} download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
-          >
-            Baixar Curriculo
+          >             
+           Baixar Curriculo
           </motion.a>
-        </motion.div>
+ <div onMouseOver={  ()=>  setpdfView(true)} onMouseOut={  ()=>  setpdfView(false) } className='on_mouse_over'>
 
-      </div>
+</div> 
+
+        </motion.div>
+ { pdfView&& <motion.div  className='curriculo   '  onMouseOver={  ()=>  setpdfView(true)} onMouseOut={  ()=>  setpdfView(false)  }   >
+   <iframe 
+  className='view_curriculo'  title='curriculo' src={`${curriculo}`} >
+    curriculo</iframe> 
+ </motion.div>} 
+      </div  >
 
     </div>
   )

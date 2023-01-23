@@ -55,6 +55,7 @@ const Navbar = () => {
                       className="nav_links"
                    >
                   {navLinks.map((navlink,index) => {
+                    console.log(navlink[0]);
                       return <li key={index}><a href={`#${navlink}`}>{navlink}</a></li>
                   })}
               </ul>

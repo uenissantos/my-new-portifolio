@@ -6,7 +6,14 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
+
+
+    
     <div className="container" id="contact">
+
+
+
+      
       <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}} 
@@ -21,6 +28,12 @@ const Contact = () => {
           whileInView={{ x: [-150,0], opacity: 1 }}
           transition={{duration: 1}}
           className='contact_left_container'>
+
+
+
+
+
+            
           <h3>Apenas diga oi</h3>
           <p className='contact_text'>A vida sem sonhos, sejam eles pequenos ou enormes,
 não tem a menor graça.
