@@ -41,6 +41,30 @@ const Navbar = () => {
             setScroll(window.scrollY > 20)
         })
     },[])
+
+let href=''
+
+ function redirect(index){
+
+switch (index) {
+    case 0:
+      href=  'https://github.com/uenissantos'
+        break;
+        case 1:
+            href=  "https://www.linkedin.com/in/uenis-santos-desenvolvedor-front-end/"
+              break;
+              case 2:
+                href=  'https://wa.me/5521994305914'
+                  break;
+    default:
+        break;
+}
+
+
+
+
+}
+
   return (
       <motion.div
           initial={{ y: -25 }}
@@ -59,8 +83,9 @@ const Navbar = () => {
                   })}
               </ul>
               <div className="social_icons" >
-                  {socialIcons.map((socialIcon, index) => {             
-                  const href= index===0 ?'https://github.com/uenissantos':"https://www.linkedin.com/in/uenis-santos-desenvolvedor-front-end/"
+                  {socialIcons.map((socialIcon, index) => {  
+                    
+                    redirect(index)
 
                   return (
                       <div key={index}>

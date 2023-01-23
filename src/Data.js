@@ -3,7 +3,7 @@ import {TiHtml5} from 'react-icons/ti'
 import {} from 'react-icons/si'
 
 import { TbBrandJavascript,TbBrandAngular } from "react-icons/tb";
-import { SiTypescript ,SiStyledcomponents,SiTailwindcss,SiJest,SiWebpack,SiEslint,SiFigma,SiFlutter} from "react-icons/si";
+import { SiTypescript ,SiStyledcomponents,SiTailwindcss,SiJest,SiWhatsapp,SiWebpack,SiEslint,SiFigma,SiFlutter} from "react-icons/si";
 import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
@@ -16,6 +16,7 @@ export const navLinks = ["home", "sobre", " habilidades", "portfolio", "contato"
 export const socialIcons = [
   <FaGithubAlt />,
   <FaLinkedin />,
+  <SiWhatsapp/>
 ]
 
 export const bios = [
